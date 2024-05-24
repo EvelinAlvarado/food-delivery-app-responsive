@@ -10,9 +10,13 @@ export const NavBar = () => {
     <div className="py-5 px-0 flex justify-between items-center ">
       {" "}
       {/* navbar */}
-      <img className="w-[150px]" src={assets.logo} alt="Logo" />
+      <img
+        className="w-[120px] tablet:w-[140px] lg:w-[150px]"
+        src={assets.logo}
+        alt="Logo"
+      />
       {/* logo */}
-      <ul className="flex gap-5 text-lg text-Very-dark-grayish ">
+      <ul className="hidden md:flex gap-[15px] tablet:gap-[18px] lg:gap-5 text-base tablet:text-[17px] lg:text-lg text-Very-dark-grayish ">
         {/* navbar-menu */}
         <li
           onClick={() => setMenu("home")}
@@ -39,16 +43,20 @@ export const NavBar = () => {
           contact us
         </li>
       </ul>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-5 tablet:gap-[30px] lg:gap-10">
         {/* navbar-right */}
-        <img src={assets.search_icon} alt="" />
+        <img
+          className="w-5 tablet:w-[22px] lg:w-[27px]"
+          src={assets.search_icon}
+          alt="Search icon"
+        />
         <div className="relative">
           {/* navbar-search-icon */}
           <img src={assets.basket_icon} alt="" />
           <div className="absolute min-w-[10px] min-h-[10px] bg-tomato rounded-[5px] top-[-8px] right-[-8px]"></div>
           {/* dot */}
         </div>
-        <button className="text-base text-Very-dark-grayish border-solid border-[1px] border-tomato py-[10px] px-[30px] rounded-[50px] cursor-pointer hover:bg-lighter-tomato transition duration-300">
+        <button className="text-[15px] tablet:text-base text-Very-dark-grayish border-solid border-[1px] border-tomato py-[7px] tablet:py-2 lg:py-[10px] px-5 tablet:px-[25px] lg:px-[30px] rounded-[50px] cursor-pointer hover:bg-lighter-tomato transition duration-300">
           Sign in
         </button>
       </div>

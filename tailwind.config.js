@@ -42,6 +42,9 @@ export default {
       boxShadow: {
         custom: "0px 0px 10px #00000015",
       },
+      screens: {
+        tablet: "900px",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
