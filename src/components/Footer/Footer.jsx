@@ -2,9 +2,9 @@ import { assets } from "../../assets/image/assets";
 
 export const Footer = () => {
   return (
-    <div className="bg-bg-footer text-footer-color flex flex-col items-center gap-[20px] pt-20 pb-5 px-[8vw] mt-[100px]">
+    <div className="bg-bg-footer text-footer-color flex flex-col items-center gap-[20px] pt-20 pb-5 px-[8vw] lg:px-0 mt-[100px]">
       {/* footer */}
-      <div className="w-full grid grid-cols-[2fr_1fr_1fr] gap-20">
+      <div className="w-full lg:w-4/5 xl:max-w-7xl flex flex-col tabletSm:grid tabletSm:grid-cols-[2fr_1fr_1fr] gap-[35px] tabletSm:gap-20">
         {/* footer-content */}
 
         <div className="flex flex-col items-start gap-5">
@@ -19,17 +19,17 @@ export const Footer = () => {
           <div className="flex gap-[15px]">
             {/* footer-social-icons */}
             <img
-              className="w-10 cursor-pointer"
+              className="w-10 cursor-pointer transition duration-500 hover:scale-125"
               src={assets.facebook_icon}
               alt=""
             />
             <img
-              className="w-10 cursor-pointer"
+              className="w-10 cursor-pointer transition duration-500 hover:scale-125"
               src={assets.twitter_icon}
               alt=""
             />
             <img
-              className="w-10 cursor-pointer"
+              className="w-10 cursor-pointer transition duration-500 hover:scale-125"
               src={assets.linkedin_icon}
               alt=""
             />
@@ -61,7 +61,9 @@ export const Footer = () => {
         </div>
       </div>
       <hr className="w-full h-[2px] my-5 bg-gray-400" />
-      <p>Copyright 2024 © Tomato.com - All Right Reserved</p>
+      <p className="text-center">
+        Copyright 2024 © Tomato.com - All Right Reserved
+      </p>
     </div>
   );
 };

@@ -7,7 +7,9 @@ export const FoodDisplay = ({ category }) => {
   return (
     <div className="mt-[30px]">
       {/* food-display */}
-      <h2 className="text-h2 font-semibold">Top dishes near you</h2>
+      <h2 className="text-h2 2xl:text-[32px] font-semibold">
+        Top dishes near you
+      </h2>
       <div className="grid grid-cols-auto-fill-240 mt-[30px] gap-y-[30px] gap-x-[50px]">
         {/* food-display-list */}
         {food_list.map((item, index) => {

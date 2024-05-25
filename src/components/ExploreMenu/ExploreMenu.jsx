@@ -10,7 +10,7 @@ export const ExploreMenu = ({ category, setCategory }) => {
       <h1 className="text-dark-greyish font-medium text-[25px]">
         Explore our menu
       </h1>
-      <p className="max-w-[60%] text-greyish">
+      <p className="max-w-full lg:max-w-[60%] text-[14px] lg:text-base text-greyish">
         {/* explore-menu-text */}
         Choose from a diverse menu featuring a delectable array of dishes. Our
         mission is to satisfy your cravings and elevate your dining experience,
@@ -35,11 +35,11 @@ export const ExploreMenu = ({ category, setCategory }) => {
               <img
                 className={`${
                   category === item.menu_name && activeClass
-                }  w-[7.5vw] min-w-20 cursor-pointer rounded-[50%] duration-200`}
+                }  w-[7.5vw] 2xl:w-[122px] min-w-20 cursor-pointer rounded-[50%] duration-200`}
                 src={item.menu_image}
                 alt=""
               />
-              <p className="mt-[10px] text-light-grey text-dynamic-p cursor-pointer">
+              <p className="mt-[10px] text-light-grey text-dynamic-p 2xl:text-[22px] cursor-pointer">
                 {item.menu_name}
               </p>
             </div>

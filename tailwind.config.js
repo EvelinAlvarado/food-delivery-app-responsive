@@ -44,6 +44,7 @@ export default {
       },
       screens: {
         tablet: "900px",
+        tabletSm: "750px",
       },
     },
   },
