@@ -35,6 +35,7 @@ export default {
       },
       animation: {
         fadeIn: "fadeIn 3s",
+        fadeIn2: "fadeIn .5s",
       },
       gridTemplateColumns: {
         "auto-fill-240": "repeat(auto-fill, minmax(240px, 1fr))",

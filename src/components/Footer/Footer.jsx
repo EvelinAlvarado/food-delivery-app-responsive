@@ -2,7 +2,10 @@ import { assets } from "../../assets/image/assets";
 
 export const Footer = () => {
   return (
-    <div className="bg-bg-footer text-footer-color flex flex-col items-center gap-[20px] pt-20 pb-5 px-[8vw] lg:px-0 mt-[100px]">
+    <div
+      className="bg-bg-footer text-footer-color flex flex-col items-center gap-[20px] pt-20 pb-5 px-[8vw] lg:px-0 mt-[100px]"
+      id="footer"
+    >
       {/* footer */}
       <div className="w-full lg:w-4/5 xl:max-w-7xl flex flex-col tabletSm:grid tabletSm:grid-cols-[2fr_1fr_1fr] gap-[35px] tabletSm:gap-20">
         {/* footer-content */}

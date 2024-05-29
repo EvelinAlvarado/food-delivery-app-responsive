@@ -5,7 +5,7 @@ export const ExploreMenu = ({ category, setCategory }) => {
     "border-[4px] border-solid border-tomato py-[2px] px-[2px]";
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5" id="explore-menu">
       {/* explore-menu */}
       <h1 className="text-dark-greyish font-medium text-[25px]">
         Explore our menu

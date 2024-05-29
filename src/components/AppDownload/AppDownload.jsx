@@ -2,7 +2,10 @@ import { assets } from "../../assets/image/assets";
 
 export const AppDownload = () => {
   return (
-    <div className="mx-auto mt-[100px] text-[max(3vw,20px)] 2xl:text-[40px] text-center font-medium">
+    <div
+      className="mx-auto mt-[100px] text-[max(3vw,20px)] 2xl:text-[40px] text-center font-medium"
+      id="app-download"
+    >
       {/* app-download */}
       <p>
         For Better Experience Download <br />
